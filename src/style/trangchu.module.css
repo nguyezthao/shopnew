@@ -1,0 +1,170 @@
+.imageContainer img {
+  width: 100%;
+  height: 600px;
+}
+.container {
+  /* Phần CSS cho phần tử container (nếu cần) */
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.imageBig {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của cha */
+  height: auto;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+.icon {
+  font-size: 90px; /* Kích thước mặc định của icon */
+  transition: transform 0.3s ease; /* Chuyển động transform trong 0.3s với hiệu ứng dễ dàng */
+  color: transparent;
+}
+
+.button:active .icon {
+  transform: scale(
+    0.5
+  ); /* Khi nút được click, icon sẽ được phóng to lên 1.2 lần kích thước ban đầu */
+}
+.imageContainer:hover .icon {
+  /* Đặc điểm của class icon khi hover vào .imageContainer */
+  /* Ví dụ: thay đổi màu chữ thành đỏ */
+  color: rgb(163, 163, 163);
+  display: flex;
+  transition: color 0.3s ease; /* Chuyển động màu chữ trong 0.3s với hiệu ứng dễ dàng */
+}
+.text p {
+  font-size: 50px;
+  box-sizing: 20px;
+
+  font-weight: 200px;
+}
+.card {
+  width: 450px;
+  height: auto;
+}
+.container_card .card img {
+  width: auto;
+  padding: 20px;
+}
+.container_card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  height: auto;
+}
+.card img:hover {
+  transform: scale(1.1); /* Phóng to ảnh lên 1.2 lần */
+}
+.cardTitle {
+  font-size: 25px;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.cardDescription {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+.cardDescription:hover {
+  color: rgb(189, 27, 15);
+}
+.cardTitle:hover {
+  color: chocolate;
+}
+
+.container_img {
+  margin-top: 20px;
+  display: flex;
+  gap: 80px;
+  padding: 10px;
+}
+.card_img {
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.9;
+  position: relative;
+}
+
+.detailButton {
+  /* Additional styling properties for the button */
+  z-index: 1;
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 16px; /* Adjust the font size to increase button size */
+  padding: 12px 20px; /* Adjust padding for larger size */
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  border-color: blue;
+  color: white;
+}
+.card_img p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 20px;
+}
+.imgFooter {
+  position: relative;
+}
+.imgFooter img {
+  width: 1950px;
+  height: 580px;
+}
+.textImg {
+  width: 1000px;
+  height: 400px;
+
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+}
+.textImg h1 {
+  font-size: px;
+  display: inline-block; /* Đặt văn bản thành block để background có thể áp dụng được */
+  background: url("../img/1506_Hinh-nen-mau-hong119.jpg") center center
+    no-repeat; /* Đường dẫn và thuộc tính background */
+  background-size: cover; /* Chỉnh kích thước ảnh nền */
+  color: transparent;
+  -webkit-background-clip: text; /* Áp dụng background chỉ cho vùng chữ trên trình duyệt Webkit (Chrome, Safari) */
+  background-clip: text; /* Áp dụng background chỉ cho vùng chữ trên các trình duyệt hiện đại khác */
+}
+.bandLogo {
+  display: flex;
+}
+.band img {
+  width: 380px;
+  height: 200px;
+}

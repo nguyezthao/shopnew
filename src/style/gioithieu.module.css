@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+}
+.text {
+  margin-left: 40px;
+  font-size: 24px;
+  padding-top: 150px;
+}
+.text p {
+  color: rgb(106, 106, 106);
+}
+.img {
+  display: flex;
+  margin: 70px;
+}
+.photo img {
+  width: 400px;
+  height: 500px;
+}
+.photo img {
+  padding: 100px;
+}
+.bandLogo {
+  display: flex;
+}
+.band img {
+  width: 380px;
+  height: 200px;
+}
